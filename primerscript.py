@@ -1,4 +1,5 @@
 import colorama
+import random
 variable1 ="""
 /////////////////////////////////////////////////////////////////+++++++++++++++++++++++++++++++++++
 /////////////////////////////////////////::::::::::::::::////////////////////////++/++++++++++++++++
@@ -29,8 +30,11 @@ s+s///+s+s:s+s/:sos++y++mNNNNNNNNNNNNmhyyo:----------:s+s/:s+s/-+osssso/:osssss+
 ////////////::::::+yyhNNNNNMMMMMMMMMMMMMMMMMy+++/:::::::::::::::::::::://///////////////////////////
 /////////////:::::ohhmNMMMMMMMMMMMMMMMMMMMMMy////:::::::::::::::::://///////////////////////////////
                                                                                 J-TOOLS  BY JEANKARLO   """
-print( colorama.Fore.BLACK +  variable1)
-print (colorama.Fore.BLUE + "\t""BIEVENIDOS A MI PROGRAMA")
+colores_1 = colorama.Fore.BLUE, colorama.Fore.GREEN, colorama.Fore.WHITE, colorama.Fore.RED, colorama.Fore.YELLOW, colorama.Fore.CYAN,
+colorama.Fore.LIGHTBLACK_EX, colorama.Fore.LIGHTGREEN_EX, colorama.Fore.LIGHTRED_EX, 
+colores_2 = random.choice(colores_1)
+print (colores_2 +  variable1)
+print (colores_2 + "\t""BIEVENIDOS A MI PROGRAMA")
 print (" ")
 print ("MENU")
 print ("ponga 01 para ver comandos basicos de una terminal de linux")
@@ -38,10 +42,10 @@ print ("ponga 02 para  poder ver camaras de seguridad de muchos paises")
 print ("ponga 03 para salir del progrma")
 print (" ")
 variable2 = input(">>")
-if variable2 == ("01"):
+if variable2 == ("01") or variable2 == ("1"):
     print (" ")
     print ("iniciando el programa ...")
-    print (colorama.Fore.BLUE + """ cargando ....
+    print (colores_2 + """ cargando ....
 1. comando pwd
 Usa el comando pwd para encontrar la ruta del directorio (carpeta) de trabajo actual en el que te encuentras. El comando devolverá una ruta absoluta (completa), que es básicamente una ruta de todos los directorios que comienzan con una barra diagonal (/) Un ejemplo de una ruta absoluta es /home/nombredeusuario.
 
@@ -222,9 +226,9 @@ Los comandos básicos de Linux ayudan a los usuarios a ejecutar tareas de manera
 
 Al final, conocer y dominar estos comandos básicos de Linux sin duda será beneficioso para ti""")
     print (input("pulse cualquier tecla para finalizar >>"))
-    print (colorama.Fore.WHITE + variable1)
+    print (colores_2 + variable1)
     print ("GRACIAS POR USAR MI HERRAMIENTA :)")
-elif variable2 == ("02"):
+elif variable2 == ("02") or variable2 == ("2"):
     print ("""MOSTRANDO PAISES DISPONIBLES PARA VER CAMARAS ...
     [01] COLOMBIA       \t [09] CHINA
     [02] ESTADOS UNIDOS \t [10] ARGENTINA
@@ -245,9 +249,10 @@ elif variable2 == ("02"):
         http://insecam.org/en/view/870320/
         http://insecam.org/en/view/847458/
         http://insecam.org/en/view/794551/
-        http://insecam.org/en/view/523402/""")
-        print (colorama.Fore.WHITE + variable1)
-    elif variable3 == ("02"):
+        http://insecam.org/en/view/523402/
+        """)
+        print (colores_2 + variable1)
+    elif variable3 == ("02") or variable3 == ("2"):
         print ("cargando links de camaras de estados unidos ...")
         print (" ")
         print (""" 
@@ -255,9 +260,10 @@ elif variable2 == ("02"):
         http://insecam.org/en/view/870127/
         http://insecam.org/en/view/870130/
         http://insecam.org/en/view/869896/
-        http://insecam.org/en/view/869608/""")
-        print (colorama.Fore.WHITE + variable1)
-    elif variable3 == ("03"):
+        http://insecam.org/en/view/869608/
+        """)
+        print (colores_2 + variable1)
+    elif variable3 == ("03") or variable3 == ("3"):
         print ("cargando links de camaras de alemania ...")
         print (" ")
         print ("""
@@ -265,9 +271,10 @@ elif variable2 == ("02"):
         http://insecam.org/en/view/870289/
         http://insecam.org/en/view/870195/
         http://insecam.org/en/view/869894/
-        http://insecam.org/en/view/869811/""")
-        print (colorama.Fore.WHITE + variable1)
-    elif variable3 == ("04"):    
+        http://insecam.org/en/view/869811/
+        """)
+        print (colores_2 + variable1)
+    elif variable3 == ("04") or variable3 == ("4"):    
         print ("cargando links de camaras de japon ...")
         print (" ")
         print ("""
@@ -277,8 +284,8 @@ elif variable2 == ("02"):
         http://insecam.org/en/view/870291/
         http://insecam.org/en/view/870001/
         """)
-        print (colorama.Fore.WHITE + variable1)
-    elif variable3 == ("05"):
+        print (colores_2 + variable1)
+    elif variable3 == ("05") or variable3 == ("5"):
         print ("cargando links de camaras de españa ...")
         print (" ")
         print ("""
@@ -288,8 +295,8 @@ elif variable2 == ("02"):
         http://insecam.org/en/view/869588/
         http://insecam.org/en/view/868762/
         """)
-        print (colorama.Fore.WHITE + variable1)
-    elif variable3 == ("06"):
+        print (colores_2 + variable1)
+    elif variable3 == ("06") or variable3 == ("1") :
         print ("cargando links de camaras de brasil ...")
         print (" ")
         print ("""
@@ -299,8 +306,8 @@ elif variable2 == ("02"):
         http://insecam.org/en/view/852331/
         http://insecam.org/en/view/842250/
         """)
-        print (colorama.Fore.WHITE + variable1)
-    elif variable3 == ("07"):
+        print (colores_2 + variable1)
+    elif variable3 == ("07") or variable3 == ("7"):
         print ("cargando links de camaras de rusia ...")
         print (" ")
         print ("""
@@ -310,8 +317,8 @@ elif variable2 == ("02"):
         http://insecam.org/en/view/869630/
         http://insecam.org/en/view/869808/
         """)
-        print (colorama.Fore.WHITE + variable1)
-    elif variable3 == ("08"):
+        print (colores_2 + variable1)
+    elif variable3 == ("08") or variable3 == ("8"):
         print ("cargando links de camaras de china ...")
         print (" ")
         print ("""
@@ -321,8 +328,8 @@ elif variable2 == ("02"):
         http://insecam.org/en/view/844268/
         http://insecam.org/en/view/844249/
         """)
-        print (colorama.Fore.WHITE + variable1)
-    elif variable3 == ("09"):
+        print (colores_2 + variable1)
+    elif variable3 == ("09") or variable3 == ("9"):
         print ("cargando links de camaras de argentina ...")
         print (" ")
         print (""" 
@@ -332,7 +339,7 @@ elif variable2 == ("02"):
         https://www.insecam.org/en/view/858557/
         https://www.insecam.org/en/view/859951/
         """)
-        print (colorama.Fore.WHITE + variable1)
+        print (colores_2 + variable1)
     elif variable3 == ("10"):
         print ("cargando links de camaras de sur africa")
         print (" ")
@@ -343,7 +350,7 @@ elif variable2 == ("02"):
         https://www.insecam.org/en/view/848316/
         https://www.insecam.org/en/view/835579/
         """)
-        print (colorama.Fore.WHITE + variable1)
+        print (colores_2 + variable1)
     elif variable3 == ("11"):
         print ("cargando links de camaras de israel")
         print (" ")
@@ -354,7 +361,7 @@ elif variable2 == ("02"):
         https://www.insecam.org/en/view/868647/
         https://www.insecam.org/en/view/866103/
         """)
-        print (colorama.Fore.GREEN + variable1)
+        print (colores_2 + variable1)
     elif variable3 == ("12"):
         print ("cargando links de camaras de iran")
         print (" ")
@@ -365,7 +372,7 @@ elif variable2 == ("02"):
         http://insecam.org/en/view/869357/
         http://insecam.org/en/view/869676/
         """)
-        print (colorama.Fore.WHITE + variable1)
+        print (colores_2 + variable1)
     elif variable3 == ("14"):
         print ("cargando links de camaras de mexico")
         print (" ")
@@ -375,16 +382,16 @@ elif variable2 == ("02"):
         http://insecam.org/en/view/624068/
         http://insecam.org/en/view/452387/
         http://insecam.org/en/view/168510/""")
-        print (colorama.Fore.WHITE + variable1)
+        print (colores_2 + variable1)
     elif variable3 == (" "):
         print ("los caracteres puestos no tienen funcion")
-        print (colorama.Fore.WHITE + variable1)
-elif variable2 == ("03"):
+        print (colores_2 + variable1)
+elif variable2 == ("03") or variable2 == ("3"):
     print ("saliendo del programa .....")
-    print (colorama.Fore.WHITE + variable1)
+    print (colores_2 + variable1)
     print ("GRACIAS POR USAR MI HERRAMIENTA :)")
 else:
     print  ("este numero no esta registrado como funcion")
-    print  (colorama.Fore.WHITE + variable1)
-    print ("GRACIAS POR USAR MI HERRAMIENTA :)")
+    print  (colores_2 + variable1)
+    print  ("GRACIAS POR USAR MI HERRAMIENTA :)")
 
