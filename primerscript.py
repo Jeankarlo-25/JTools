@@ -29,7 +29,7 @@ s+s///+s+s:s+s/:sos++y++mNNNNNNNNNNNNmhyyo:----------:s+s/:s+s/-+osssso/:osssss+
 ////////////::::::+yyhNNNNNMMMMMMMMMMMMMMMMMy+++/:::::::::::::::::::::://///////////////////////////
 /////////////:::::ohhmNMMMMMMMMMMMMMMMMMMMMMy////:::::::::::::::::://///////////////////////////////
                                                                                 J-TOOLS  BY JEANKARLO   """
-print( colorama.Fore.WHITE +  variable1)
+print( colorama.Fore.BLACK +  variable1)
 print (colorama.Fore.BLUE + "\t""BIEVENIDOS A MI PROGRAMA")
 print (" ")
 print ("MENU")
@@ -237,7 +237,7 @@ elif variable2 == ("02"):
     print (" ")
     variable3 = input("ponga el numero de el pais que quiere ver >>")
     print ("buscando camaras disponibles ....")
-    if variable3 == ("01"):
+    if variable3 == ("01") or variable3 == ("1"):
         print ("cargando links de las camaras de colombia ...")
         print (" ")
         print (""" 
